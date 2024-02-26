@@ -53,3 +53,9 @@ header:hover h2 {
     border-bottom: 2px solid #05386b;
 }
 
+/* HERO SECTION */
+.hero {
+    height: auto;
+    width: 100%;
+    background-image: url(/Assets/images/pexels-suzy-hazelwood-1629236.jpg);
+}
