@@ -1,10 +1,11 @@
+
+
 :root {
-    --header-height: 90px;
+    --header-height: 70px;
 }
 
 body {
-    background-color: #c6d7ce;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #dbdbdb;
 }
 
 header {
@@ -13,11 +14,14 @@ header {
     align-items: center;
     width: 100%;
     height: var(--header-height);
-    background: rgb(186,157,74);
-    background: radial-gradient(circle, rgba(186,157,74,1) 0%, rgba(184,62,158,1) 100%);
+    background: linear-gradient(90deg, rgba(237,233,215,1) 0%, rgba(144,143,139,1) 34%, rgba(102,101,98,1) 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 header h2 {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: bold;
+    font-style: normal;
     font-size: 2.5rem;
     color: #edf5e1;
     padding-left: 2%;
@@ -31,6 +35,7 @@ header .navbar-list {
     display: flex;
     height: var(--header-height);
     align-items: center;
+    margin-right: 2%;
 }
 
 header:hover h2 {
@@ -47,15 +52,20 @@ header:hover h2 {
 }
 
 .navbar-list li a {
-    font-size: 14px;
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1rem;
     text-decoration: none;
     color: #05386b;
-    border-bottom: 2px solid #05386b;
+    /* border-bottom: 2px solid #05386b; */
 }
 
 /* HERO SECTION */
 .hero {
-    height: auto;
+    height: 300px;
     width: 100%;
-    background-image: url(/Assets/images/pexels-suzy-hazelwood-1629236.jpg);
+    background-image: url(/Assets/images/3d\ render.jpg);
+    background-position-x: left;
+    background-size: cover;
 }
