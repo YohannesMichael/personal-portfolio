@@ -15,8 +15,9 @@ header {
     width: 100%;
     height: var(--header-height);
     background: linear-gradient(90deg, rgba(237,233,215,1) 0%, rgba(144,143,139,1) 34%, rgba(102,101,98,1) 100%);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-}
+    box-shadow: 42px 43px 86px 15px rgba(0,0,0,0.62) inset;
+    -webkit-box-shadow: 42px 43px 86px 15px rgba(0,0,0,0.62) inset;
+    -moz-box-shadow: 42px 43px 86px 15px rgba(0,0,0,0.62) inset;}
 
 header h2 {
     font-family: "Bruno Ace", sans-serif;
@@ -33,9 +34,9 @@ header h2 {
 
 header .navbar-list {
     display: flex;
-    height: var(--header-height);
+    justify-content: space-between;
     align-items: center;
-    margin-right: 2%;
+    height: var(--header-height);
 }
 
 header:hover h2 {
@@ -44,11 +45,7 @@ header:hover h2 {
 
 .navbar-list li {
     padding: 0 20px;
-}
-
-.navbar-list li:hover a {
-    color: white;
-    border-bottom: 3px solid white;
+    width: auto;
 }
 
 .navbar-list li a {
@@ -57,9 +54,15 @@ header:hover h2 {
     font-style: normal;
     font-size: 1rem;
     text-decoration: none;
-    color: #05386b;
-    /* border-bottom: 2px solid #05386b; */
+    color: #958ca3;
+    transition: 0.4s;
 }
+
+.navbar-list li:hover a {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
 
 /* HERO SECTION */
 .hero {
